@@ -1,3 +1,3 @@
 # legoRemote
 
-Also check out the [client app](https://github.com/rkrupinski/legoRemote).
+Also check out the [client app](https://github.com/rkrupinski/legoRemoteClient).
