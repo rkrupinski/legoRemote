@@ -16,6 +16,7 @@ function handleRemote(socket) {
   const input$ = Rx.Observable.fromEvent(socket, 'input');
 
   const subscription = input$
+      .throttle(100)
       .map(normalize)
       .do(() => tessel.led[3].toggle())
       .subscribe(data => infrared.sendRawSignal(38, lego.move(data)));
